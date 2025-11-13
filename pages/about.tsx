@@ -4,8 +4,8 @@ const AboutPage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Nitin Ranganath</h1>
-        <div className={styles.subtitle}>Software Engineer</div>
+        <h1 className={styles.title}>Aidan CRISTINI</h1>
+        <div className={styles.subtitle}>Etudiant en Alternance en 3ème Année de BUT Informatique</div>
 
         <div className={styles.aboutContent}>
           <section className={styles.section}>
