@@ -10,48 +10,42 @@ const AboutPage = () => {
         <div className={styles.aboutContent}>
           <section className={styles.section}>
             <p className={styles.paragraph}>
-              Hey! I&apos;m a software engineer from Mumbai, India. I primarily
-              work with JavaScript / TypeScript and the React ecosystem.
+              Bonjour ! Je m&apos;appelle Aidan CRISTINI, un étudiant en 3ème année de BUT Informatique en alternance. 
+              Ceci est mon portfolio où je partage mes projets personnels et universitaires, expériences et passions dans le domaine de l&apos;informatique.
             </p>
             <p className={styles.paragraph}>
-              I&apos;m focused on frontend development with React, but
-              you&apos;ll also find me working with Node.js, MongoDB and Express
-              while building the backend for my personal projects.
-            </p>
-          </section>
-
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Experience</h2>
-            <p className={styles.paragraph}>
-              Currently at <span className={styles.highlight}>Tessact</span> as
-              Software Engineer 2, working with a lean team of 4 frontend
-              engineers to build a next-gen video creation suite for the people
-              of video.
-            </p>
-            <p className={styles.paragraph}>
-              I&apos;ve been leading the development efforts for bringing
-              collaborative video reviewing and editing to the platform. I also
-              maintain our in-house component library, icon library and website.
+              Mes compétences incluent le développement applicatif et web, la programmation orientée objet, 
+              la gestion de bases de données, l&apos;administration système et bien plus encore.
             </p>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Writing</h2>
+            <h2 className={styles.sectionTitle}>Expérience</h2>
             <p className={styles.paragraph}>
-              I&apos;ve had the pleasure of writing for some amazing
-              publications like{' '}
-              <span className={styles.highlight}>100ms Blog</span>,{' '}
-              <span className={styles.highlight}>LogRocket Blog</span>,{' '}
-              <span className={styles.highlight}>DEV.to</span> and more as a
-              freelance technical author.
+              Grâce à l&apos;alternance, j&apos;ai eu l&apos;opportunité de travailler sur divers projets réels en entreprise,
+              ce qui m&apos;a permis d&apos;appliquer mes connaissances théoriques et de développer mes compétences pratiques, 
+              en plus d&apos;élargir mon champ de connaissances grâce à des expériences externes à l&apos;université.
+            </p>
+            <p className={styles.paragraph}>
+              J&apos;ai pu travailler en alternance chez Toulouse Métropole pendant deux ans, 
+              dans l&apos;équipe en charge de la maintenance applicative de l&apos;intégralité de la Métropole ! <br></br>
+              Cette expérience m&apos;a permis de travailler sur un environnement Microsoft (0365) en automatisant 
+              les tâches de mon équipe grâce à PowerAutomate, et de contrstruire des KPI pour montrer nos résultats via PowerBI.
+              J&apos;ai pu prendre en charge la maintenance et la gestion d&apos;une application essentielle à la Métropole,
+              ScreenSoft, qui permet à la collectivité de gérer les écrans d&apos;affichage dynamique dans les bâtiments publics,
+              notamment pour diffuser des informations aux citoyens.
             </p>
           </section>
 
           <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Beyond Code</h2>
+            <h2 className={styles.sectionTitle}>En dehors de l&apos;informatique</h2>
             <p className={styles.paragraph}>
-              Aside from programming and writing, I like to read a good
-              dystopian novel, listen to calm piano music or just laze around.
+              En dehors de mes études et de l&apos;informatique, j&apos;aime passer du temps avec mes amis, au bar comme en montagne ou au sport.
+              En termes d&apos;activités sportives, je pratique la musculation en salle et la course à pied, en étant passé par 3 ans de football américain,
+              du triathlon, de l&apos;escalade et du krav maga.<br></br>
+              Je suis passionné de musique et je fais des mix et remix sur ordinateur.
+              Je suis également un grand amateur de jeux vidéo (et de sociétés !), en particulier les jeux de stratégies et de gestion.<br></br>
+              Pour terminer, je suis engagé en tant que Réserviste Militaire dans l&apos;Armée de Terre à la 11ème Compagnie de Commandement et de Transmissions Parachutiste.
             </p>
           </section>
         </div>
