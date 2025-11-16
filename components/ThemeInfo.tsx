@@ -31,7 +31,7 @@ const ThemeInfo = ({ icon, name, publisher, theme }: ThemeInfoProps) => {
           <h3>{name}</h3>
           <h5>{publisher}</h5>
         </div>
-        <button onClick={() => setTheme(theme)}>Set Color Theme</button>
+        <button onClick={() => setTheme(theme)}>Choisir ce thème</button>
       </div>
     </div>
   );

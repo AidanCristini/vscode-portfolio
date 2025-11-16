@@ -6,10 +6,11 @@ import styles from '@/styles/ProjectsPage.module.css';
 const ProjectsPage = () => {
   return (
     <div className={styles.layout}>
-      <h1 className={styles.pageTitle}>My Projects</h1>
+      <h1 className={styles.pageTitle}>Mes Projets</h1>
       <p className={styles.pageSubtitle}>
-        Here&apos;s a collection of my recent work. These projects showcase my
-        skills in web development, design, and problem-solving.
+        Voici une sélection de projets sur lesquels j&apos;ai pu travailler.
+        Ces projets me permettent de mettre en avant mes compétences
+        en développement ainsi que ma capacité à résoudre des problèmes.
       </p>
 
       <div className={styles.container}>

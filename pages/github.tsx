@@ -18,9 +18,9 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
       <div className={styles.pageHeading}>
         <h1 className={styles.pageTitle}>GitHub</h1>
         <p className={styles.pageSubtitle}>
-          Browse through my GitHub repositories and see what I&apos;ve been
-          working on. These are some of my public repositories showcasing
-          various projects and skills.
+          Voici un aperçu de mon profil GitHub, incluant mes dépôts
+          ainsi qu&apos;un aperçu de mes contributions récentes. N&apos;hésitez pas à visiter mon profil pour
+          en savoir plus sur mes projets et activités de développement. 
         </p>
       </div>
 
@@ -52,7 +52,7 @@ const GithubPage = ({ repos, user }: GithubPageProps) => {
         </div>
 
         <div className={styles.sectionHeader}>
-          <h3 className={styles.sectionTitle}>Popular Repositories</h3>
+          <h3 className={styles.sectionTitle}>Mes repositories GitHub</h3>
         </div>
         <div className={styles.reposContainer}>
           {repos.map((repo) => (

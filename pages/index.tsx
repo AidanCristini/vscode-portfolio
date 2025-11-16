@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { VscArrowRight } from 'react-icons/vsc';
+import { VscArrowLeft, VscArrowRight } from 'react-icons/vsc';
 
 import styles from '@/styles/HomePage.module.css';
 
@@ -14,9 +14,8 @@ export default function HomePage() {
       type: 'variable',
     },
     { code: '  const developerInfo = {', type: 'variable' },
-    { code: "    name: 'Aidan CRISTINI',", type: 'array-item' },
-    { code: "    role: 'Etudiant en Alternance en 3ème Année de BUT Informatique',", type: 'array-item' },
-    { code: "    bio: 'Portfolio !'", type: 'array-item' },
+    { code: "    nom : 'Aidan CRISTINI',", type: 'array-item' },
+    { code: "    activité : 'Etudiant en Alternance en 3ème Année de BUT Informatique',", type: 'array-item' },
     { code: '  };', type: 'array-end' },
     { code: '', type: 'blank' },
     { code: '  useEffect(() => {', type: 'nested-function' },
@@ -103,7 +102,7 @@ export default function HomePage() {
 
           <div className={styles.actionLinks}>
             <Link href="/projects" className={styles.primaryLink}>
-              Venez voir mes projets <VscArrowRight /> !
+              <VscArrowRight /> Venez voir mes projets ! <VscArrowLeft />
             </Link>
           </div>
         </div>

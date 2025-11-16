@@ -2,39 +2,24 @@ import styles from '@/styles/ContactCode.module.css';
 
 const contactItems = [
   {
-    social: 'website',
-    link: 'nitinranganath.com',
-    href: 'https://nitinranganath.com',
-  },
-  {
     social: 'email',
-    link: 'nitinranganath@gmail.com',
-    href: 'mailto:nitinranganath@gmail.com',
+    link: 'aidan.cristini.pro@gmail.com',
+    href: 'mailto:aidan.cristini.pro@gmail.com',
   },
   {
     social: 'github',
-    link: 'itsnitinr',
-    href: 'https://github.com/itsnitinr',
+    link: 'AidanCristini',
+    href: 'https://github.com/AidanCristini',
   },
   {
     social: 'linkedin',
-    link: 'nitinranganath',
-    href: 'https://www.linkedin.com/in/nitinranganath/',
+    link: 'Aidan Cristini',
+    href: 'https://www.linkedin.com/in/aidan-cristini-ba63a922b/',
   },
   {
-    social: 'twitter',
-    link: 'iamnitinr',
-    href: 'https://www.twitter.com/iamnitinr',
-  },
-  {
-    social: 'telegram',
-    link: 'iamnitinr',
-    href: 'https://t.me/iamnitinr',
-  },
-  {
-    social: 'peerlist',
-    link: 'nitinranganath',
-    href: 'https://peerlist.io/nitinranganath',
+    social: 'CV',
+    link: 'CV (Canva)',
+    href: 'https://www.canva.com/design/DAGAO4LwMyY/G-zsD238KikSX1dUTcmiPg/edit?utm_content=DAGAO4LwMyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
   },
 ];
 

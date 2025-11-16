@@ -14,10 +14,10 @@ import styles from '@/styles/Sidebar.module.css';
 
 const sidebarTopItems = [
   { Icon: VscFiles, path: '/' },
-  { Icon: VscGithubAlt, path: '/github' },
-  { Icon: VscCode, path: '/projects' },
-  { Icon: VscEdit, path: '/articles' },
+  { Icon: VscEdit, path: '/about' },
   { Icon: VscMail, path: '/contact' },
+  { Icon: VscCode, path: '/projects' },
+  { Icon: VscGithubAlt, path: '/github' },
 ];
 
 const sidebarBottomItems = [
