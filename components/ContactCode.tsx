@@ -18,8 +18,8 @@ const contactItems = [
   },
   {
     social: 'CV',
-    link: 'CV (Canva)',
-    href: 'https://www.canva.com/design/DAGAO4LwMyY/G-zsD238KikSX1dUTcmiPg/edit?utm_content=DAGAO4LwMyY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton',
+    link: 'CV',
+    path: '/cv',
   },
 ];
 
