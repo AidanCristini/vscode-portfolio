@@ -1,4 +1,5 @@
 import styles from '@/styles/ContactCode.module.css';
+import Link from 'next/link';
 
 const contactItems = [
   {
@@ -19,7 +20,7 @@ const contactItems = [
   {
     social: 'CV',
     link: 'CV',
-    path: '/cv',
+    href: '/cv',
   },
 ];
 
@@ -32,9 +33,13 @@ const ContactCode = () => {
       {contactItems.map((item, index) => (
         <p className={styles.line} key={index}>
           &nbsp;&nbsp;&nbsp;{item.social}:{' '}
-          <a href={item.href} target="_blank" rel="noopener">
-            {item.link}
-          </a>
+          {item.href === '/cv' ? (
+            <Link href={item.href}>{item.link}</Link>
+          ) : (
+            <a href={item.href} target="_blank" rel="noopener noreferrer">
+              {item.link}
+            </a>
+          )}
           ;
         </p>
       ))}
