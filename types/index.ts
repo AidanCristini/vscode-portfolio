@@ -17,6 +17,15 @@ export interface Project {
   slug: string;
 }
 
+export interface Competences {
+  title: string;
+  subtitle: string;
+  description: string;
+  logo: string;
+  link: string;
+  slug: string;
+}
+
 export interface Repo {
   id: number;
   name: string;

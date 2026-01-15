@@ -10,7 +10,7 @@ const ProjectsPage = () => {
       <p className={styles.pageSubtitle}>
         Voici une sélection de projets sur lesquels j&apos;ai pu travailler.
         Ces projets me permettent de mettre en avant mes compétences
-        en développement ainsi que ma capacité à résoudre des problèmes.
+        en développement ainsi que ma capacité à résoudre des problèmes complexes.
       </p>
 
       <div className={styles.container}>

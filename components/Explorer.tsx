@@ -27,6 +27,11 @@ const explorerItems = [
     icon: '/logos/js_icon.svg',
   },
   {
+    name: 'competences.dart',
+    path: '/competences',
+    icon: '/logos/dart_icon.png',
+  },
+  {
     name: 'github.md',
     path: '/github',
     icon: '/logos/markdown_icon.svg',
