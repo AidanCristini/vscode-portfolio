@@ -23,9 +23,9 @@ export default async function handler(
   }
 
   try {
-    // Send email to your inbox
-    await resend.emails.send({
-      from: 'noreply@aidan-cristini.dev',
+    // Send email to your inbox using onboarding domain
+    const response = await resend.emails.send({
+      from: 'onboarding@resend.dev',
       to: process.env.CONTACT_EMAIL || 'aidan.cristini.pro@gmail.com',
       replyTo: email,
       subject: `Nouveau message de contact de ${email}`,
@@ -41,9 +41,11 @@ export default async function handler(
       `,
     });
 
+    console.log('Email sent to admin:', response);
+
     // Send confirmation email to user
     await resend.emails.send({
-      from: 'noreply@aidan-cristini.dev',
+      from: 'onboarding@resend.dev',
       to: email,
       subject: 'Merci pour votre message',
       html: `
@@ -55,6 +57,8 @@ export default async function handler(
         </div>
       `,
     });
+
+    console.log('Confirmation email sent to user:', email);
 
     res.status(200).json({ message: 'Message envoyé avec succès' });
   } catch (error) {
