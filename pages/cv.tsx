@@ -18,7 +18,7 @@ const AboutPage = () => {
                 style={{ width: '100%', height: '900px', border: 'none' }}
               />
               <p style={{ marginTop: '0.5rem' }}>
-                Si mon CV ne s&apos;affiche pas ou que vous avez besoin, <a href="/cv/AidanCRISTINI_CV.pdf" download>téléchargez mon CV ici</a> !
+                Si mon CV ne s&apos;affiche pas ou que vous avez besoin, <a href="/cv/AidanCRISTINI_CV.pdf" download className={styles.downloadLink}>téléchargez mon CV ici</a> !
               </p>
             </div>
           </section>
