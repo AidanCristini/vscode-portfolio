@@ -15,6 +15,11 @@ export interface Project {
   logo: string;
   link: string;
   slug: string;
+  competences?: string[];
+  fullDescription?: string;
+  gallery?: string[];
+  technologies?: string[];
+  features?: string[];
 }
 
 export interface Competences {

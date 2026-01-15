@@ -1,5 +1,5 @@
 .layout {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   height: 100%;
 }
@@ -47,15 +47,29 @@
   margin-right: auto;
 }
 
-@media screen and (max-width: 1200px) {
-  .container {
-    display: block;
-    padding: 2rem 1rem;
-  }
+.twoColumnContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 0 1rem;
+  align-items: stretch;
+}
 
-  .container > div:first-child {
-    border-right: none;
-    margin-bottom: 2rem;
+.formSection {
+  margin: 0;
+  padding: 0;
+}
+
+.codeSection {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .twoColumnContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
   }
 }
 
