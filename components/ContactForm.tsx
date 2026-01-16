@@ -81,7 +81,7 @@ const ContactForm = () => {
         />
 
         <button type="submit" className={styles.submitBtn}>
-          Envoyer le message
+          Envoyer
         </button>
       </form>
     </div>
