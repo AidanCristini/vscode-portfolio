@@ -78,6 +78,7 @@ export const projects: Project[] = [
       'Power-ups variés',
       'Niveaux aléatoires',
       'Contrôles fluides',
+      
     ],
   },
 ];
