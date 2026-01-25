@@ -9,7 +9,7 @@ import styles from '@/styles/CompetencesPage.module.css';
 
 const CompetencesPage = () => {
   const router = useRouter();
-  const { filter, highlight } = router.query;
+  const { highlight } = router.query;
   
   // Parse highlight parameter into array of slugs
   const highlightedCompetences = useMemo(() => {

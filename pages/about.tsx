@@ -51,8 +51,8 @@ const AboutPage = () => {
         <div className={styles.heroContent}>
           <h1 className={styles.title}>À propos de moi</h1>
           <p className={styles.description}>
-            Actuellement étudiant en BUT Informatique à l'IUT de Blagnac, je suis passionné par le développement logiciel et la création d'applications innovantes. 
-            Mon parcours académique et mes expériences professionnelles m'ont permis de développer des compétences solides en programmation, gestion de projets et travail en équipe.
+            Actuellement étudiant en BUT Informatique à l&apos;IUT de Blagnac, je suis passionné par le développement logiciel et la création d&apos;applications innovantes. 
+            Mon parcours académique et mes expériences professionnelles m&apos;ont permis de développer des compétences solides en programmation, gestion de projets et travail en équipe.
           </p>
           
           <div className={styles.personalInfo}>
