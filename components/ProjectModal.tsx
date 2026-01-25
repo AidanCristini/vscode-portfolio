@@ -42,14 +42,14 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
 
         <div className={styles.content}>
           <div className={styles.header}>
-            <div className={styles.logoWrapper}>
+            <div className={styles.coverWrapper}>
               <Image
-                src={project.logo}
-                alt={`${project.title} logo`}
-                width={60}
-                height={60}
-                className={styles.logo}
+                src={project.coverImage}
+                alt={`${project.title} preview`}
+                fill
+                className={styles.coverImage}
               />
+              <div className={styles.coverOverlay} />
             </div>
             <h1 className={styles.title}>{project.title}</h1>
           </div>

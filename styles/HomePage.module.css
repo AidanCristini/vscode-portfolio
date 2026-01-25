@@ -6,9 +6,11 @@
   display: grid;
   grid-template-columns: 1.2fr 1fr;
   align-items: center;
-  gap: 4rem;
-  padding: 2rem 4rem;
+  gap: 2rem;
+  padding: 1rem 3rem;
   height: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .editorContent {
@@ -45,8 +47,8 @@
 
 .codeContainer {
   width: 100%;
-  max-width: 600px;
-  height: 550px;
+  max-width: 550px;
+  height: 450px;
   background: var(--main-bg);
   border-radius: 8px;
   overflow: hidden;
@@ -206,11 +208,11 @@
 .infoSection {
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  gap: 1.5rem;
   align-items: flex-start;
   position: relative;
   z-index: 2;
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 .profilePictureWrapper {
@@ -221,15 +223,15 @@
 }
 
 .profilePicture {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid var(--accent-color);
 }
 
 .developerName {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 800;
   margin: 0;
   color: var(--text-color);
@@ -242,16 +244,16 @@
 }
 
 .developerRole {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   color: rgba(255, 255, 255, 0.8);
-  margin-top: -0.5rem;
+  margin-top: -0.25rem;
 }
 
 .bio {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  font-size: 0.95rem;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.7);
-  max-width: 35rem;
+  max-width: 30rem;
   margin: 0;
 }
 

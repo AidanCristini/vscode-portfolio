@@ -12,7 +12,7 @@ export interface Article {
 export interface Project {
   title: string;
   description: string;
-  logo: string;
+  coverImage: string;
   link: string;
   slug: string;
   competences?: string[];

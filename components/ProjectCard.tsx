@@ -27,19 +27,17 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           className={styles.card}
           onClick={() => setIsModalOpen(true)}
         >
+          <div className={styles.imageWrapper}>
+            <Image
+              src={project.coverImage}
+              alt={`${project.title} preview`}
+              fill
+              className={styles.coverImage}
+            />
+            <div className={styles.imageOverlay} />
+          </div>
           <div className={styles.content}>
-            <div className={styles.header}>
-              <div className={styles.logoWrapper}>
-                <Image
-                  src={project.logo}
-                  alt={`${project.title} logo`}
-                  width={24}
-                  height={24}
-                  className={styles.logo}
-                />
-              </div>
-              <h3 className={styles.title}>{project.title}</h3>
-            </div>
+            <h3 className={styles.title}>{project.title}</h3>
             
             {projectCompetences.length > 0 && (
               <div className={styles.competencesBadges}>

@@ -1,7 +1,7 @@
 export interface Project {
   title: string;
   description: string;
-  logo: string;
+  coverImage: string;
   link: string;
   slug: string;
   competences?: string[];
@@ -16,90 +16,68 @@ export const projects: Project[] = [
     title: 'ParaCheck',
     description:
       'Application mobile pour les parapentistes : sécurité, historiques de vols, suivi des compétences et plus encore !',
-    logo: '/logos/paracheck.svg',
+    coverImage: '/project-images/paracheck-cover.jpg',
     link: 'https://github.com/Diego-PB/ParaCheck',
     slug: 'paraCheck',
-    competences: ['realiser', 'optimiser', 'collaborer'],
+    competences: ['realiser', 'optimiser', 'collaborer', 'gerer'],
     fullDescription:
       'ParaCheck est une application mobile complète dédiée aux parapentistes. Elle permet de tracker les vols, d\'analyser les conditions météorologiques, de gérer l\'historique des sorties et de suivre l\'évolution des compétences en temps réel.',
     gallery: [
       '/project-images/paracheck-1.jpg',
       '/project-images/paracheck-2.jpg',
     ],
-    technologies: ['React Native', 'Firebase', 'Expo'],
+    technologies: ['Dart', 'Flutter', 'Git'],
     features: [
-      'Suivi GPS en temps réel',
-      'Historique des vols détaillé',
+      'Pré-vol checklist',
+      'Post-vol formulaire',
       'Gestion des compétences',
-      'Alertes météo intelligentes',
+      'Gestion des historiques de vol',
+      'Gestion des sites de vol',
+      'Export des données',
     ],
   },
   {
-    title: 'Dashboard IUT',
+    title: 'Dashboard IoT',
     description:
-      'Dashboard utilisant des capteurs AM1107 : récupération et affichage de données de notre bâtiment d\'études via interface web.',
-    logo: '/logos/AM107.jpg',
+      'Interface web de visualisation des données captées par des capteurs AM107 dans le bâtiment de l\'IUT.',
+    coverImage: '/project-images/dashboard-cover.jpg',
     link: 'https://github.com/IUT-Blagnac/SAE-ALT-S3-Dev-24-25-Dashboard_du_departement-Equipe-3A01',
     slug: 'dashboard',
-    competences: ['realiser', 'gerer', 'conduire'],
+    competences: ['realiser', 'gerer', 'conduire', 'administrer'],
     fullDescription:
-      'Développement d\'un dashboard Power BI pour visualiser les données collectées par des capteurs IoT dans le bâtiment pédagogique. Ce projet démontre la réchauffement climatique et les écarts de température entre les salles.',
+      'Développement d\'un dashboard web pour visualiser en temps réel les données collectées par des capteurs IoT AM107 déployés dans le département informatique de l\'IUT de Blagnac. Le projet permet de monitorer la température, l\'humidité et la qualité de l\'air des différentes salles et les entrées et sorties.',
     gallery: [
       '/project-images/dashboard-1.jpg',
       '/project-images/dashboard-2.jpg',
     ],
-    technologies: ['Power BI', 'DAX', 'SQL Server', 'Excel'],
+    technologies: ['PHP', 'CSS', 'HTML', 'JavaScript', 'mosquitto MQTT', 'Node-RED', 'AM107', 'TimeScaleDB', 'Docker', 'Nginx'],
     features: [
-      'Visualisations interactives',
-      'Filtres dynamiques et segments',
-      'Calculs KPI en temps réel',
-      'Graphiques de tendance avancés',
+      'Visualisation des données des capteurs en temps réel',
+      'Historique des données',
+      'Mise à jour automatique des données',
     ],
   },
   {
-    title: 'CloudSync Pro',
+    title: 'Jeu 3D Bomberman',
     description:
-      'Plateforme de synchronisation cloud avec chiffrement E2E, permettant le partage sécurisé de fichiers et la collaboration en équipe.',
-    logo: '/logos/paracheck.svg',
-    link: 'https://github.com/example/cloudsync-pro',
-    slug: 'cloudsync',
-    competences: ['realiser', 'administrer', 'collaborer'],
+      'Jeu Bomberman en 3D développé avec des graphismes immersifs et un gameplay multijoueur explosif !',
+    coverImage: '/project-images/bomberman-cover.jpg',
+    link: 'https://github.com/AidanCristini/bomberman3d_godot',
+    slug: 'bomberman',
+    competences: ['realiser', 'optimiser', 'collaborer', 'conduire'],
     fullDescription:
-      'CloudSync Pro est une solution complète de gestion et synchronisation de fichiers cloud avec architecture serverless. Elle intègre un système de permissions avancé, des versioning automatiques et un tableau de bord temps réel pour le monitoring des équipes.',
+      'Recréation du classique Bomberman en environnement 3D avec le moteur Godot. Le jeu propose des niveaux dynamiques, des power-ups variés et un mode multijoueur local pour des parties endiablées entre amis.',
     gallery: [
-      '/project-images/cloudsync-1.jpg',
-      '/project-images/cloudsync-2.jpg',
+      '/project-images/bomberman-1.jpg',
+      '/project-images/bomberman-2.jpg',
     ],
-    technologies: ['Node.js', 'AWS Lambda', 'PostgreSQL', 'React'],
+    technologies: ['Godot', 'GDScript', '3D Modeling'],
     features: [
-      'Chiffrement bout-à-bout',
-      'Synchronisation temps réel',
-      'Gestion des permissions granulaires',
-      'Historique versionné complet',
-      'API REST complète',
-    ],
-  },
-  {
-    title: 'Analytics Engine',
-    description:
-      'Moteur d\'analyse de données temps réel pour la visualisation et le reporting automatisé d\'événements métier complexes.',
-    logo: '/logos/AM107.jpg',
-    link: 'https://github.com/example/analytics-engine',
-    slug: 'analytics',
-    competences: ['realiser', 'optimiser', 'gerer'],
-    fullDescription:
-      'Analytics Engine est un système de traitement et visualisation de données en temps réel permettant l\'analyse instantanée de millions d\'événements. Il fournit des dashboards customisables, des alertes intelligentes et des exports automatisés pour la prise de décision rapide.',
-    gallery: [
-      '/project-images/analytics-1.jpg',
-      '/project-images/analytics-2.jpg',
-    ],
-    technologies: ['Apache Kafka', 'Elasticsearch', 'Grafana', 'TypeScript'],
-    features: [
-      'Traitement temps réel de 1M+ events/sec',
-      'Dashboards dynamiques et customisables',
-      'Alertes intelligentes avec ML',
-      'Export multi-formats automatisé',
-      'Intégration API Webhooks',
+      'Graphismes 3D immersifs',
+      'Mode multijoueur local',
+      'Power-ups variés',
+      'Niveaux aléatoires',
+      'Contrôles fluides',
     ],
   },
 ];

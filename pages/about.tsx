@@ -1,60 +1,143 @@
+import Image from 'next/image';
+import { VscCalendar, VscLocation } from 'react-icons/vsc';
+import { FaBriefcase, FaGraduationCap, FaPython, FaDatabase, FaBrain, FaChartLine, FaCar } from 'react-icons/fa';
 import styles from '@/styles/AboutPage.module.css';
 
 const AboutPage = () => {
+  const personalInfo = [
+    { icon: <VscCalendar />, label: '19 ans' },
+    { icon: <VscLocation />, label: 'Toulouse' },
+    { icon: <FaCar/>, label: 'Permis B' },
+  ];
+
+  const technologies = [
+    { icon: <FaPython />, label: 'Java - Python - Web Development' },
+    { icon: <FaDatabase />, label: 'SQL - NoSQL' },
+    { icon: <FaBrain />, label: 'UNIX - LINUX' },
+    { icon: <FaChartLine />, label: 'Flutter' },
+  ];
+
+  const experiences = [
+    {
+      period: 'Septembre 2024 - Août 2026',
+      title: 'Mise en Oeuvre de la Maintenance Applicative',
+      type: 'ALTERNANCE',
+      company: 'Toulouse Métropole, Toulouse',
+      description: 'Participation à la maintenance et l\'évolution des applications internes de la métropole.',
+      logo: '/logos/toulouse-metropole.png',
+    },
+  ];
+
+  const education = [
+    {
+      period: '2023 - 2026',
+      title: 'BUT Informatique',
+      institution: 'IUT Blagnac, Blagnac',
+      description: 'Parcours A - Réalisation d\'applications - Conception, développement, validation.',
+    },
+    {
+      period: '2020 - 2023',
+      title: 'Baccalauréat Général',
+      institution: 'Lycée Général Saint-Sernin, Toulouse',
+      description: 'Mathématiques - Numérique et Sciences Informatiques - Physique-Chimie | Options Anglais Européen - Droits et Grands Enjeux du Monde Contemporain',
+      mention: 'Mention Bien - Option Anglais Européen',
+    },
+  ];
+
   return (
     <div className={styles.container}>
-      <div className={styles.content}>
-        <h1 className={styles.title}>Aidan CRISTINI</h1> 
-        <br></br>
-        <div className={styles.subtitle}>Etudiant en Alternance en 3ème Année de BUT Informatique</div>
+      {/* Hero Section */}
+      <section className={styles.heroSection}>
+        <div className={styles.heroContent}>
+          <h1 className={styles.title}>À propos de moi</h1>
+          <p className={styles.description}>
+            Actuellement étudiant en BUT Informatique à l'IUT de Blagnac, je suis passionné par le développement logiciel et la création d'applications innovantes. 
+            Mon parcours académique et mes expériences professionnelles m'ont permis de développer des compétences solides en programmation, gestion de projets et travail en équipe.
+          </p>
+          
+          <div className={styles.personalInfo}>
+            {personalInfo.map((info, index) => (
+              <div key={index} className={styles.infoItem}>
+                <span className={styles.infoIcon}>{info.icon}</span>
+                <span className={styles.infoLabel}>{info.label}</span>
+              </div>
+            ))}
+          </div>
 
-        <div className={styles.aboutContent}>
-          <section className={styles.section}>
-            <p className={styles.paragraph}>
-              Bonjour ! Je m&apos;appelle Aidan CRISTINI, étudiant en 3ème année de BUT Informatique en alternance. 
-              Ceci est mon portfolio où je partage mes projets personnels et universitaires, expériences et passions dans le domaine de l&apos;informatique.
-            </p>
-            <p className={styles.paragraph}>
-              Mes compétences incluent le développement applicatif et web, la programmation orientée objet, 
-              la gestion de bases de données, l&apos;administration système et bien plus encore.
-            </p>
-          </section>
-
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>Expériences</h2>
-            <p className={styles.paragraph}>
-              Grâce à l&apos;alternance, j&apos;ai eu l&apos;opportunité de travailler sur divers projets réels en entreprise,
-              ce qui m&apos;a permis d&apos;appliquer mes connaissances théoriques et de développer mes compétences pratiques, 
-              en plus d&apos;élargir mon champ de connaissances grâce à des expériences externes à l&apos;université.
-            </p>
-            <p className={styles.paragraph}>
-              J&apos;ai pu travailler en alternance chez Toulouse Métropole pendant deux ans, 
-              dans l&apos;équipe en charge de la maintenance applicative de l&apos;intégralité de la Métropole ! 
-              <br></br>
-              Cette expérience m&apos;a permis de travailler sur un environnement Microsoft (O365) en automatisant 
-              les tâches de mon équipe grâce à PowerAutomate, et de contrstruire des KPI pour montrer nos résultats via PowerBI.
-              <br></br>
-              J&apos;ai pu prendre en charge la maintenance et la gestion d&apos;une application essentielle à la Métropole,
-              ScreenSoft, qui permet à la collectivité de gérer les écrans d&apos;affichage dynamique dans les bâtiments publics,
-              notamment pour diffuser des informations aux citoyens.
-            </p>
-          </section>
-
-          <section className={styles.section}>
-            <h2 className={styles.sectionTitle}>En dehors de l&apos;informatique</h2>
-            <p className={styles.paragraph}>
-              En dehors de mes études et de l&apos;informatique, j&apos;aime passer du temps avec mes amis, au bar comme en montagne ou au sport.
-              En termes d&apos;activités sportives, je pratique la musculation en salle et la course à pied, en étant passé par 3 ans de football américain,
-              mais aussi du triathlon, de l&apos;escalade et du krav maga.
-              <br></br>
-              Je suis passionné de musique et je fais des mix et remix sur ordinateur.
-              Je suis également un grand amateur de jeux vidéo (et de sociétés !), en particulier les jeux de stratégies et de gestion.
-              <br></br>
-              Pour terminer, je suis engagé en tant que Réserviste Militaire dans l&apos;Armée de Terre à la 11ème Compagnie de Commandement et de Transmissions Parachutiste.
-            </p>
-          </section>
+          <div className={styles.techSection}>
+            <h2 className={styles.techTitle}>Technologies principales</h2>
+            <div className={styles.techGrid}>
+              {technologies.map((tech, index) => (
+                <div key={index} className={styles.techItem}>
+                  <span className={styles.techIcon}>{tech.icon}</span>
+                  <span className={styles.techLabel}>{tech.label}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      {/* Expériences Title */}
+      <h2 className={styles.sectionMainTitle}>Expériences</h2>
+
+      {/* Timeline Section */}
+      <section className={styles.timelineSection}>
+        <div className={styles.timelineColumn}>
+          <h2 className={styles.columnTitle}>
+            <FaBriefcase className={styles.columnIcon} />
+            Professionnelle
+          </h2>
+          <div className={styles.timeline}>
+            {experiences.map((exp, index) => (
+              <div key={index} className={styles.timelineItem}>
+                <div className={styles.timelineDot} />
+                <div className={styles.timelinePeriod}>{exp.period}</div>
+                <div className={styles.timelineCard}>
+                  <h3 className={styles.timelineTitle}>{exp.title}</h3>
+                  <div className={styles.timelineCompany}>
+                    {exp.logo && (
+                      <Image
+                        src={exp.logo}
+                        alt={exp.company}
+                        width={24}
+                        height={24}
+                        className={styles.companyLogo}
+                      />
+                    )}
+                    <span className={styles.timelineType}>{exp.type}</span>
+                    <span> - {exp.company}</span>
+                  </div>
+                  <p className={styles.timelineDescription}>{exp.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className={styles.timelineColumn}>
+          <h2 className={styles.columnTitle}>
+            <FaGraduationCap className={styles.columnIcon} />
+            Académique
+          </h2>
+          <div className={styles.timeline}>
+            {education.map((edu, index) => (
+              <div key={index} className={styles.timelineItem}>
+                <div className={styles.timelineDot} />
+                <div className={styles.timelinePeriod}>{edu.period}</div>
+                <div className={styles.timelineCard}>
+                  <h3 className={styles.timelineTitle}>{edu.title}</h3>
+                  <div className={styles.timelineInstitution}>{edu.institution}</div>
+                  <p className={styles.timelineDescription}>{edu.description}</p>
+                  {edu.mention && (
+                    <span className={styles.mention}>{edu.mention}</span>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
