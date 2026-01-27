@@ -20,6 +20,7 @@ export interface Project {
   gallery?: string[];
   technologies?: string[];
   features?: string[];
+  webLink?: string;
 }
 
 export interface Competences {

@@ -212,6 +212,12 @@
   text-transform: capitalize;
 }
 
+.linksContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
 .projectLink {
   display: inline-flex;
   align-items: center;

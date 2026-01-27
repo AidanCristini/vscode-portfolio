@@ -11,11 +11,10 @@ const CompetencesCard = ({ competence, isExpanded = false }: CompetencesCardProp
   return (
     <div className={styles.card}>
       <div className={styles.content}>
-        <h3 className={styles.title}>{competence.title}</h3>
+        <div className={styles.badge}>{competence.title}</div>
         <div className={styles.subtitle}>{competence.subtitle}</div>
         {isExpanded && <p className={styles.description}>{competence.description}</p>}
       </div>
-      <div className={styles.badge}>{competence.title}</div>
     </div>
   );
 };

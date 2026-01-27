@@ -35,6 +35,7 @@ export const projects: Project[] = [
       'Gestion des sites de vol',
       'Export des données',
     ],
+    webLink: 'https://diego-pb.github.io/ParaCheck/',
   },
   {
     title: 'Dashboard IoT',
@@ -56,6 +57,7 @@ export const projects: Project[] = [
       'Historique des données',
       'Mise à jour automatique des données',
     ],
+    webLink: 'https://dashboard.leonardocm.fr',
   },
   {
     title: 'Jeu 3D Bomberman',
@@ -80,5 +82,6 @@ export const projects: Project[] = [
       'Contrôles fluides',
       
     ],
+    webLink: 'https://elporaz.itch.io/bomberman3d-test-upload?secret=FDSesdUgB3xAQlAMUc6VnrKMpI',
   },
 ];

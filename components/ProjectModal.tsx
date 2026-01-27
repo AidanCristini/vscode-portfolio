@@ -124,12 +124,21 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
           )}
 
           {/* Link to project */}
-          {project.link && (
+          {(project.link || project.webLink) && (
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>Projet en ligne</h2>
-              <Link href={project.link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
-                Voir sur GitHub →
-              </Link>
+              <h2 className={styles.sectionTitle}>Liens du projet</h2>
+              <div className={styles.linksContainer}>
+                {project.link && (
+                  <Link href={project.link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                    Voir sur GitHub →
+                  </Link>
+                )}
+                {project.webLink && (
+                  <Link href={project.webLink} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
+                    Voir la version web →
+                  </Link>
+                )}
+              </div>
             </section>
           )}
         </div>

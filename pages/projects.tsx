@@ -61,9 +61,8 @@ const ProjectsPage = () => {
     <div className={styles.layout}>
       <h1 className={styles.pageTitle}>Mes Projets</h1>
       <p className={styles.pageSubtitle}>
-        Voici une sélection de projets sur lesquels j&apos;ai pu travailler.
-        Ces projets me permettent de mettre en avant mes compétences
-        en développement ainsi que ma capacité à résoudre des problèmes complexes et à travailler en équipe.
+        Une sélection de mes réalisations illustrant mes compétences en développement, 
+        ma capacité à résoudre des problèmes complexes et mon aptitude au travail collaboratif.
       </p>
 
       {/* Competence Filter */}

@@ -26,6 +26,14 @@ const AboutPage = () => {
       description: 'Participation à la maintenance et l\'évolution des applications internes de la métropole.',
       logo: '/logos/toulouse-metropole.png',
     },
+    {
+      period: 'Février 2024 - Aujourd\'hui',
+      title: 'Réserviste Militaire',
+      type: 'RÉSERVE',
+      company: 'Armée de Terre',
+      description: '11ème Compagnie de Commandement et de Transmissions Parachutiste. Engagement dans la réserve opérationnelle, contribution aux missions de défense et de sécurité nationale.',
+      logo: '/logos/armee_de_terre_logo.png',
+    },
   ];
 
   const education = [
