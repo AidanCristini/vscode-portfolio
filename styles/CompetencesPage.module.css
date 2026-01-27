@@ -64,11 +64,6 @@
   transform: translateY(-2px);
 }
 
-.cardButton.expanded {
-  /* Expanded state now lets the inner card size to its content */
-}
-
-/* Let the inner card shrink-wrap to its content in both states */
 .cardButton > div,
 .cardButton.expanded > div {
   min-height: auto;
