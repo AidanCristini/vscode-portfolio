@@ -54,17 +54,6 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
           </div>
         </button>
 
-        {project.webLink && (
-          <a
-            href={project.webLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.viewOnlineBtn}
-          >
-            Voir en ligne →
-          </a>
-        )}
-
         {projectCompetences.length > 0 && (
           <Link
             href={`/competences?highlight=${projectCompetences.map((c) => c?.slug).join(',')}`}
