@@ -9,6 +9,7 @@ export interface Project {
   gallery?: string[];
   technologies?: string[];
   features?: string[];
+  webLink?: string; // Ajout d'un champ optionnel pour les liens web
 }
 
 export const projects: Project[] = [
@@ -35,6 +36,7 @@ export const projects: Project[] = [
       'Gestion des sites de vol',
       'Export des données',
     ],
+    webLink: 'https://diego-pb.github.io/ParaCheck/', // Ajout du lien web pour ParaCheck
   },
   {
     title: 'Dashboard IoT',
@@ -56,6 +58,7 @@ export const projects: Project[] = [
       'Historique des données',
       'Mise à jour automatique des données',
     ],
+    webLink: 'https://dashboard.leonardocm.fr', // Ajout du lien web pour Dashboard IoT
   },
   {
     title: 'Jeu 3D Bomberman',
@@ -80,5 +83,6 @@ export const projects: Project[] = [
       'Contrôles fluides',
       
     ],
+    webLink: 'https://elporaz.itch.io/bomberman3d-test-upload?secret=FDSesdUgB3xAQlAMUc6VnrKMpI', // Ajout du lien web pour Bomberman 3D
   },
 ];
