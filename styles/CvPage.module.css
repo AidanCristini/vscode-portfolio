@@ -1,0 +1,69 @@
+/* Styles spécifiques à la page CV */
+.cvCard {
+  background: var(--article-bg);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  max-width: 700px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cvSubtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cvIframeWrapper {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
+  margin-bottom: 1.5rem;
+}
+
+.cvIframe {
+  width: 100%;
+  height: 700px;
+  border: none;
+  background: #fff;
+}
+
+.cvButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.cvDownloadButton {
+  display: inline-block;
+  padding: 0.7rem 1.6rem;
+  background: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,0.08);
+  transition: background 0.2s, transform 0.2s;
+}
+.cvDownloadButton:hover {
+  background: #fff;
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  transform: translateY(-2px) scale(1.04);
+}
+
+.cvNote {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  margin-bottom: 2.2rem;
+  text-align: center;
+}
