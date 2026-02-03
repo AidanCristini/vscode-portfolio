@@ -8,6 +8,7 @@ const CustomHead = ({ title }: CustomHeadProps) => {
   return (
     <Head>
       <title>{title}</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
       <meta
         name="description"
         content="Aidan CRISTINI's personal portfolio website."

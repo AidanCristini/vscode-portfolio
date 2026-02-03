@@ -2,7 +2,7 @@
   max-width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 3rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   color: var(--text-color);
 }
 
@@ -246,44 +246,274 @@
 }
 
 /* Responsive */
-@media screen and (max-width: 1024px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .container {
+    padding: 0.5rem 1rem;
+  }
+
   .heroSection {
-    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 1.25rem;
   }
 
   .photoWrapper {
-    max-width: 350px;
+    max-width: 320px;
     margin: 0 auto;
+  }
+
+  .title {
+    font-size: 2.4rem;
+  }
+
+  .description {
+    font-size: 1.05rem;
   }
 
   .timelineSection {
     grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .timelineColumn {
+    padding: 1.5rem;
+  }
+
+  .columnTitle {
+    font-size: 1.6rem;
+  }
+
+  .sectionMainTitle {
+    font-size: 1.8rem;
+    margin: 2rem 0 1.5rem;
+  }
+
+  .techGrid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
   .container {
-    padding: 1.5rem 1rem;
+    padding: 0.5rem 0.75rem;
   }
 
   .heroSection {
     padding: 1.5rem;
+    border-radius: 16px;
+    gap: 1rem;
+  }
+
+  .photoWrapper {
+    max-width: 250px;
+    aspect-ratio: 1/1;
+    margin: 0 auto;
   }
 
   .title {
-    font-size: 2rem;
+    font-size: 1.9rem;
+  }
+
+  .description {
+    font-size: 0.95rem;
   }
 
   .personalInfo {
-    gap: 1.5rem;
+    gap: 1.75rem;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .techGrid {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+  }
+
+  .techLabel {
+    font-size: 0.9rem;
+  }
+
+  .timelineSection {
     grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .timelineColumn {
+    padding: 1.25rem;
+    border-radius: 14px;
   }
 
   .columnTitle {
     font-size: 1.4rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .timelineCard {
+    padding: 1rem;
+  }
+
+  .timelineTitle {
+    font-size: 1.05rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.85rem;
+  }
+
+  .sectionMainTitle {
+    font-size: 1.5rem;
+    margin: 1.25rem 0 1rem;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0.4rem 0.5rem;
+  }
+
+  .heroSection {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .photoWrapper {
+    max-width: 200px;
+  }
+
+  .title {
+    font-size: 1.65rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .personalInfo {
+    gap: 1.25rem;
+  }
+
+  .infoLabel {
+    font-size: 0.85rem;
+  }
+
+  .techSection {
+    margin-top: 1rem;
+  }
+
+  .techTitle {
+    font-size: 1.15rem;
+    margin-bottom: 0.9rem;
+  }
+
+  .techGrid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .techLabel {
+    font-size: 0.85rem;
+  }
+
+  .timelineColumn {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .columnTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timelineDot {
+    left: -1.5rem;
+    width: 11px;
+    height: 11px;
+  }
+
+  .timelinePeriod {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .timelineCard {
+    padding: 0.85rem;
+  }
+
+  .timelineTitle {
+    font-size: 0.95rem;
+  }
+
+  .timelineCompany,
+  .timelineInstitution {
+    font-size: 0.8rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.8rem;
+  }
+
+  .sectionMainTitle {
+    font-size: 1.35rem;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .container {
+    padding: 0.3rem 0.35rem;
+  }
+
+  .heroSection {
+    padding: 1rem;
+  }
+
+  .photoWrapper {
+    max-width: 160px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .personalInfo {
+    gap: 0.9rem;
+  }
+
+  .infoLabel {
+    font-size: 0.8rem;
+  }
+
+  .techTitle {
+    font-size: 1.05rem;
+  }
+
+  .techLabel {
+    font-size: 0.8rem;
+  }
+
+  .columnTitle {
+    font-size: 1.15rem;
+  }
+
+  .timelineTitle {
+    font-size: 0.9rem;
+  }
+
+  .timelineDescription {
+    font-size: 0.75rem;
+  }
+
+  .sectionMainTitle {
+    font-size: 1.2rem;
   }
 }

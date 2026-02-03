@@ -38,8 +38,31 @@
   border-left: 1px solid #1e1f29;
 }
 
-@media screen and (max-width: 600px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .content {
-    padding: 2rem 1rem;
+    padding: 1.5rem;
+    height: 82vh;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .content {
+    padding: 1.25rem 1rem;
+    height: calc(100vh - 30px - 25px);
+    align-items: flex-start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .content {
+    padding: 1rem 0.75rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .content {
+    padding: 0.75rem 0.5rem;
   }
 }

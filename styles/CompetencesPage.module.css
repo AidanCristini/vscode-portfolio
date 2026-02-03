@@ -98,23 +98,105 @@
   box-shadow: 0 8px 16px rgba(var(--accent-color-rgb), 0.3);
 }
 
-@media screen and (max-width: 768px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .layout {
+    padding: 0 1rem;
+  }
+
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
   .pageTitle {
-    font-size: 1.75rem;
+    font-size: 1.85rem;
   }
 
   .pageSubtitle {
     font-size: 0.95rem;
   }
 
+  .pageHeading {
+    margin-bottom: 1.75rem;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .layout {
+    padding: 0 0.5rem;
+  }
+
+  .pageHeading {
+    margin-bottom: 1.5rem;
+  }
+
+  .pageTitle {
+    font-size: 1.65rem;
+  }
+
+  .pageSubtitle {
+    font-size: 0.9rem;
+  }
+
   .container {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 1.5rem 0;
+    gap: 1.25rem;
+    margin: 1.25rem 0;
   }
 
   .viewProjects {
     width: 100%;
     text-align: center;
+  }
+
+  .cardButton {
+    margin: 0.75rem auto;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .layout {
+    padding: 0 0.25rem;
+  }
+
+  .pageHeading {
+    margin-bottom: 1.25rem;
+  }
+
+  .pageTitle {
+    font-size: 1.45rem;
+  }
+
+  .pageSubtitle {
+    font-size: 0.85rem;
+  }
+
+  .container {
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  .viewProjects {
+    padding: 0.5rem 1.25rem;
+    font-size: 0.85rem;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .pageTitle {
+    font-size: 1.25rem;
+  }
+
+  .pageSubtitle {
+    font-size: 0.8rem;
+  }
+
+  .viewProjects {
+    padding: 0.45rem 1rem;
+    font-size: 0.8rem;
   }
 }

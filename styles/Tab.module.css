@@ -8,6 +8,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 0.9rem;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .tab p {
@@ -18,4 +19,50 @@
   border-top: 1px solid var(--accent-color);
   background: var(--tab-active-bg);
   border-bottom: none;
+}
+
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .tab {
+    padding: 0.4rem 0.9rem;
+    font-size: 0.85rem;
+  }
+
+  .tab p {
+    margin-left: 4px;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .tab {
+    padding: 0.35rem 0.7rem;
+    font-size: 0.8rem;
+    min-width: fit-content;
+    flex-shrink: 0;
+  }
+
+  .tab p {
+    margin-left: 3px;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .tab {
+    padding: 0.3rem 0.55rem;
+    font-size: 0.75rem;
+  }
+
+  .tab p {
+    margin-left: 2px;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .tab {
+    padding: 0.25rem 0.45rem;
+    font-size: 0.7rem;
+  }
 }

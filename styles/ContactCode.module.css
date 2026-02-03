@@ -53,19 +53,78 @@
   color: var(--accent-color);
 }
 
-@media screen and (max-width: 600px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .code {
     font-size: 0.95rem;
-    line-height: 1.6rem;
-    padding: 1.25rem 1rem;
+    line-height: 1.65rem;
+    padding: 1rem;
+    border-radius: 6px;
   }
 
   .line {
-    padding-left: 2rem;
-    white-space: normal;
+    padding-left: 2.25rem;
   }
 
   .line::before {
+    font-size: 0.85rem;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .code {
+    font-size: 0.85rem;
+    line-height: 1.5rem;
+    padding: 1rem 0.75rem;
+    border-radius: 6px;
+  }
+
+  .code::before {
+    height: 3px;
+  }
+
+  .line {
+    padding-left: 1.85rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .line::before {
+    font-size: 0.75rem;
+  }
+}
+
+/* Small mobile */
+@media screen and (max-width: 480px) {
+  .code {
     font-size: 0.8rem;
+    line-height: 1.4rem;
+    padding: 0.875rem 0.5rem;
+  }
+
+  .line {
+    padding-left: 1.75rem;
+  }
+
+  .line::before {
+    font-size: 0.7rem;
+  }
+}
+
+/* Very small mobile */
+@media screen and (max-width: 320px) {
+  .code {
+    font-size: 0.7rem;
+    line-height: 1.3rem;
+    padding: 0.75rem 0.35rem;
+  }
+
+  .line {
+    padding-left: 1.5rem;
+  }
+
+  .line::before {
+    font-size: 0.6rem;
   }
 }

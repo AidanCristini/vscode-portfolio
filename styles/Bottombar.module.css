@@ -38,11 +38,77 @@
   background: var(--bottombar-hover-bg);
 }
 
-@media screen and (max-width: 600px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .bottomBar {
-    font-size: 0.6rem;
+    font-size: 0.75rem;
+    padding: 0 0.4rem;
   }
+
   .section {
-    margin-right: 0.5rem;
+    margin-right: 0.4rem;
+    padding: 0 0.15rem;
+    min-height: 24px;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .bottomBar {
+    height: 28px;
+    font-size: 0.7rem;
+    padding: 0 0.35rem;
+  }
+
+  .section {
+    margin-right: 0.3rem;
+    padding: 0 0.2rem;
+    min-height: 28px;
+    min-width: 40px;
+    justify-content: center;
+  }
+
+  .icon {
+    margin-right: 2px;
+    font-size: 0.8rem;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .bottomBar {
+    height: 26px;
+    font-size: 0.6rem;
+    padding: 0 0.25rem;
+  }
+
+  .section {
+    margin-right: 0.2rem;
+    padding: 0 0.15rem;
+    min-height: 26px;
+    min-width: 36px;
+  }
+
+  .icon {
+    font-size: 0.75rem;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .bottomBar {
+    height: 24px;
+    font-size: 0.55rem;
+    padding: 0 0.15rem;
+  }
+
+  .section {
+    margin-right: 0.1rem;
+    min-width: 32px;
+  }
+
+  .icon {
+    font-size: 0.7rem;
+    margin-right: 1px;
   }
 }

@@ -11,6 +11,8 @@
   height: 100%;
   max-height: 100%;
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .editorContent {
@@ -593,11 +595,14 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+/* Desktop large: > 1200px - default styles */
+
+/* Desktop: 1024px - 1200px */
+@media (min-width: 1024px) and (max-width: 1200px) {
   .container {
     grid-template-columns: 1fr;
-    gap: 3rem;
-    padding: 2rem;
+    gap: 2rem;
+    padding: 1.5rem;
   }
 
   .codeSection {
@@ -606,7 +611,7 @@
   }
 
   .codeContainer {
-    height: 450px;
+    height: 400px;
     max-width: 100%;
     margin: 0 auto;
   }
@@ -623,8 +628,8 @@
   }
 
   .profilePicture {
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
   .bio {
@@ -636,47 +641,61 @@
   }
 }
 
-@media (max-width: 768px) {
+/* Tablet: 768px - 1024px */
+@media (min-width: 768px) and (max-width: 1023px) {
   .container {
-    padding: 1.5rem;
-    gap: 2rem;
-    min-height: auto;
     grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  .codeSection {
+    justify-self: center;
+    width: 100%;
   }
 
   .codeContainer {
-    height: 380px;
+    height: 350px;
     max-width: 100%;
+    margin: 0 auto;
   }
 
-  .editorContent {
-    font-size: 11px;
-  }
-
-  .codeLine {
-    font-size: 11px;
-  }
-
-  .developerName {
-    font-size: 3rem;
-  }
-
-  .developerRole {
-    font-size: 1.1rem;
-  }
-
-  .bio {
-    font-size: 1rem;
+  .infoSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .profilePictureWrapper {
     display: flex;
+    margin-bottom: 1rem;
   }
 
   .profilePicture {
-    width: 150px;
-    height: 150px;
-    border: 2px solid var(--accent-color);
+    width: 160px;
+    height: 160px;
+  }
+
+  .developerName {
+    font-size: 2.5rem;
+  }
+
+  .developerRole {
+    font-size: 1rem;
+  }
+
+  .bio {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .skillTag {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+  }
+
+  .actionLinks {
+    justify-content: center;
   }
 
   .codeBlock1,
@@ -698,108 +717,47 @@
   .orb2,
   .orb3 {
     opacity: 0.1;
-    width: 70%;
-    height: 200px;
-  }
-
-  .dotPattern {
-    opacity: 0.2;
-  }
-
-  .infoSection {
-    text-align: center;
-    align-items: center;
-    margin-top: 1.5rem;
   }
 }
 
-@media (max-width: 480px) {
+/* Mobile: < 768px */
+@media (max-width: 767px) {
   .container {
-    padding: 2rem 0;
-    gap: 1.5rem;
+    padding: 1rem 0.75rem;
+    gap: 1.25rem;
+    min-height: auto;
     grid-template-columns: 1fr;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 
-  /* Remove the background gradient from heroLayout */
-  .heroLayout::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(
-      circle at 30% 70%,
-      rgba(var(--accent-color-rgb), 0.06) 0%,
-      transparent 65%
-    );
-    z-index: -2;
+  .codeContainer {
+    height: 300px;
+    max-width: 100%;
   }
 
-  .decorElements::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(
-        to right,
-        rgba(255, 255, 255, 0.03) 1px,
-        transparent 1px
-      ),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-    background-size: 20px 20px;
-    opacity: 0.3;
-    z-index: -1;
+  .lineNumbers {
+    width: 35px;
+    font-size: 10px;
   }
 
-  .mobileAccent {
-    display: block;
-    position: absolute;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    background: conic-gradient(
-      from 0deg,
-      transparent,
-      rgba(var(--accent-color-rgb), 0.1),
-      rgba(var(--accent-color-rgb), 0.2),
-      rgba(var(--accent-color-rgb), 0.1),
-      transparent
-    );
-    top: 15%;
-    right: 15%;
-    filter: blur(30px);
-    opacity: 0.7;
-    animation: rotateMobileAccent 15s linear infinite;
-    z-index: -1;
+  .codeEditor {
+    font-size: 10px;
+    padding: 10px 10px 10px 0;
   }
 
-  .mobileAccent::after {
-    content: '';
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    top: 80%;
-    left: -150px;
-    border-radius: 50%;
-    background: radial-gradient(
-      circle at center,
-      rgba(120, 200, 255, 0.2),
-      transparent 70%
-    );
-    filter: blur(20px);
+  .codeLine {
+    font-size: 10px;
   }
 
-  .codeSection {
-    display: none;
+  .developerName {
+    font-size: 2rem;
   }
 
-  .infoSection {
-    text-align: center;
-    align-items: center;
-    position: relative;
-    max-width: 90%;
-    margin: 0 auto;
+  .developerRole {
+    font-size: 0.95rem;
+  }
+
+  .bio {
+    font-size: 0.85rem;
   }
 
   .profilePictureWrapper {
@@ -812,53 +770,34 @@
     border: 2px solid var(--accent-color);
   }
 
-  .infoSection::before {
-    display: none;
+  .skillTags {
+    justify-content: center;
   }
 
-  .developerName {
-    font-size: 2.8rem;
-    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-    line-height: 1.1;
+  .skillTag {
+    padding: 3px 8px;
+    font-size: 0.7rem;
   }
 
-  .accentText {
-    text-shadow: 0 0 15px rgba(var(--accent-color-rgb), 0.6);
-  }
-
-  .developerRole {
-    font-size: 1rem;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 1.2rem;
-    margin-top: 0;
-  }
-
-  .bio {
-    font-size: 0.9rem;
-    line-height: 1.6;
-    color: rgba(255, 255, 255, 0.9);
-    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    max-width: 320px;
-    margin-left: auto;
-    margin-right: auto;
+  .actionLinks {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 0.75rem;
   }
 
   .primaryLink {
     width: 100%;
-    max-width: 240px;
+    max-width: 260px;
     justify-content: center;
-    padding: 0.75rem 1rem;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(var(--accent-color-rgb), 0.4);
+    padding: 0.65rem 1.25rem;
+    font-size: 0.9rem;
   }
 
-  .primaryLink:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 20px rgba(var(--accent-color-rgb), 0.5);
+  .infoSection {
+    text-align: center;
+    align-items: center;
+    margin-top: 0.75rem;
   }
 
   /* Hide decorative elements on mobile */
@@ -875,14 +814,117 @@
   .orb3 {
     display: none;
   }
+}
 
-  @keyframes rotateMobileAccent {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
+/* Small mobile: < 480px */
+@media (max-width: 480px) {
+  .container {
+    padding: 0.75rem 0.5rem;
+    gap: 1rem;
+  }
+
+  .codeSection {
+    display: none;
+  }
+
+  .developerName {
+    font-size: 1.75rem;
+  }
+
+  .developerRole {
+    font-size: 0.85rem;
+  }
+
+  .bio {
+    font-size: 0.8rem;
+    max-width: 290px;
+  }
+
+  .profilePicture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skillTag {
+    padding: 2px 6px;
+    font-size: 0.65rem;
+  }
+
+  .primaryLink {
+    padding: 0.55rem 1rem;
+    font-size: 0.85rem;
+    max-width: 240px;
+  }
+
+  .infoSection {
+    padding: 0 0.25rem;
+  }
+
+  .mobileAccent {
+    display: block;
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: conic-gradient(
+      from 0deg,
+      transparent,
+      rgba(var(--accent-color-rgb), 0.1),
+      rgba(var(--accent-color-rgb), 0.2),
+      rgba(var(--accent-color-rgb), 0.1),
+      transparent
+    );
+    top: 15%;
+    right: 10%;
+    filter: blur(25px);
+    opacity: 0.6;
+    animation: rotateMobileAccent 15s linear infinite;
+    z-index: -1;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media (max-width: 320px) {
+  .container {
+    padding: 0.5rem 0.35rem;
+  }
+
+  .developerName {
+    font-size: 1.5rem;
+  }
+
+  .developerRole {
+    font-size: 0.8rem;
+  }
+
+  .bio {
+    font-size: 0.75rem;
+    max-width: 260px;
+  }
+
+  .profilePicture {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillTag {
+    padding: 2px 5px;
+    font-size: 0.6rem;
+  }
+
+  .primaryLink {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.8rem;
+    max-width: 220px;
+  }
+}
+
+@keyframes rotateMobileAccent {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 

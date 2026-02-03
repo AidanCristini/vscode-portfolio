@@ -127,28 +127,165 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .contactBox {
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1.35rem;
+    border-radius: 14px;
   }
 
   .title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+  }
+
+  .subtitle {
+    font-size: 0.82rem;
+    margin-bottom: 1.1rem;
+  }
+
+  .form {
+    gap: 0.9rem;
   }
 
   .formRow {
-    grid-template-columns: 1fr;
+    gap: 0.9rem;
   }
 
   .input,
   .textarea {
-    font-size: 0.9rem;
-    padding: 0.75rem 0.875rem;
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+    min-height: 44px;
+  }
+
+  .textarea {
+    min-height: 90px;
+  }
+
+  .submitBtn {
+    padding: 0.9rem 1.75rem;
+    font-size: 0.92rem;
+    min-height: 48px;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .contactBox {
+    padding: 1.25rem;
+    border-radius: 12px;
+  }
+
+  .title {
+    font-size: 1.25rem;
+  }
+
+  .subtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .form {
+    gap: 0.75rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+    padding: 0.7rem 0.85rem;
+    min-height: 48px;
+    width: 100%;
+  }
+
+  .textarea {
+    min-height: 80px;
   }
 
   .submitBtn {
     padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+    min-height: 50px;
+    width: 100%;
+  }
+
+  .successMessage {
+    padding: 0.8rem;
     font-size: 0.9rem;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .contactBox {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+  }
+
+  .title::after {
+    width: 40px;
+    margin-top: 0.4rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+    margin-bottom: 0.875rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px;
+    padding: 0.65rem 0.7rem;
+    min-height: 46px;
+    border-radius: 6px;
+  }
+
+  .submitBtn {
+    padding: 0.8rem 1.25rem;
+    font-size: 0.9rem;
+    min-height: 48px;
+    border-radius: 6px;
+  }
+
+  .successMessage {
+    padding: 0.75rem;
+    font-size: 0.85rem;
+    border-radius: 6px;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .contactBox {
+    padding: 0.875rem;
+  }
+
+  .title {
+    font-size: 1.05rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .input,
+  .textarea {
+    font-size: 16px;
+    padding: 0.6rem 0.6rem;
+    min-height: 44px;
+  }
+
+  .submitBtn {
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+    min-height: 46px;
   }
 }

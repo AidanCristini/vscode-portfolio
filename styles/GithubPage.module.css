@@ -192,10 +192,27 @@
   background-size: 100% 88%;
 }
 
-@media screen and (max-width: 768px) {
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .layout {
+    padding: 0 0.5rem;
+  }
+
+  .pageHeading {
+    padding-top: 2rem;
+  }
+
+  .profileSection {
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 6px;
+  }
+
   .profileInfo {
     flex-direction: column;
     align-items: center;
+    padding: 0 1rem;
+    gap: 1.25rem;
   }
 
   .pageTitle {
@@ -205,14 +222,175 @@
   .pageSubtitle {
     font-size: 1rem;
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 
   .userInfo {
     width: 100%;
+    gap: 1.5rem;
+  }
+
+  .avatar {
+    width: 85px;
+    height: 85px;
+  }
+
+  .username {
+    font-size: 1.35rem;
+  }
+
+  .username::before {
+    font-size: 1.35rem;
   }
 
   .reposContainer {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .sectionHeader {
+    margin: 1.25rem 0 0.75rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.1rem;
+  }
+
+  .contributions {
+    padding: 1rem;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .layout {
+    padding: 0 0.25rem;
+  }
+
+  .pageHeading {
+    padding-top: 1.5rem;
+  }
+
+  .pageTitle {
+    font-size: 1.5rem;
+  }
+
+  .pageSubtitle {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .profileSection {
+    padding: 1.25rem 1rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .profileInfo {
+    padding: 0 0.5rem;
+    gap: 1rem;
+  }
+
+  .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .username {
+    font-size: 1.2rem;
+  }
+
+  .username::before {
+    font-size: 1.2rem;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .statItem {
+    font-size: 0.85rem;
+  }
+
+  .profileLink {
+    font-size: 0.85rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .sectionIcon {
+    font-size: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 1rem;
+  }
+
+  .reposContainer {
+    gap: 0.75rem;
+  }
+
+  .contributions {
+    padding: 0.75rem;
+    border-radius: 6px;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .pageHeading {
+    padding-top: 1.25rem;
+  }
+
+  .pageTitle {
+    font-size: 1.3rem;
+  }
+
+  .pageSubtitle {
+    font-size: 0.8rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .profileSection {
+    padding: 1rem 0.75rem;
+  }
+
+  .profileInfo {
+    gap: 0.75rem;
+  }
+
+  .avatar {
+    width: 60px;
+    height: 60px;
+  }
+
+  .username {
+    font-size: 1.1rem;
+  }
+
+  .username::before {
+    font-size: 1.1rem;
+  }
+
+  .userInfo {
+    gap: 1rem;
+  }
+
+  .statItem {
+    font-size: 0.8rem;
+  }
+
+  .profileLink {
+    font-size: 0.8rem;
+  }
+
+  .sectionTitle {
+    font-size: 0.95rem;
+  }
+
+  .reposContainer {
+    gap: 0.5rem;
   }
 }
 
@@ -222,37 +400,35 @@
   }
 }
 
-@media screen and (max-width: 600px) {
-  .avatar {
-    width: 80px;
-    height: 80px;
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .layout {
+    padding: 0 1rem;
   }
 
-  .username {
-    font-size: 1.4rem;
+  .pageHeading {
+    padding-top: 2.5rem;
   }
 
-  .username::before {
-    font-size: 1.4rem;
+  .pageTitle {
+    font-size: 1.85rem;
   }
 
-  .sectionIcon {
-    font-size: 1.1rem;
-    padding: 0.4rem;
+  .pageSubtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
   }
 
-  .sectionTitle {
-    font-size: 1.2rem;
+  .profileSection {
+    padding: 1.75rem;
   }
 
-  .stats {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 900px) {
   .reposContainer {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .contributions {
+    padding: 1.25rem;
   }
 }

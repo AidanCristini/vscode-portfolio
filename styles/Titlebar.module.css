@@ -56,11 +56,84 @@
   background: #ff5555;
 }
 
-@media screen and (max-width: 900px) {
+/* Tablet: 768px - 1024px */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .titlebar {
+    height: 28px;
+    font-size: 0.8rem;
+  }
+
   .items p {
     display: none;
   }
+
   .title {
     flex: 4;
+  }
+
+  .windowButtons * {
+    height: 11px;
+    width: 11px;
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 767px) {
+  .titlebar {
+    height: 26px;
+    padding: 0 0.35rem;
+    font-size: 0.75rem;
+  }
+
+  .items {
+    display: none;
+  }
+
+  .title {
+    flex: 1;
+    font-size: 0.75rem;
+    text-align: center;
+  }
+
+  .windowButtons {
+    flex: 0;
+  }
+
+  .windowButtons * {
+    height: 10px;
+    width: 10px;
+    margin-left: 0.3rem;
+  }
+}
+
+/* Small mobile: < 480px */
+@media screen and (max-width: 480px) {
+  .titlebar {
+    height: 24px;
+    font-size: 0.7rem;
+    padding: 0 0.25rem;
+  }
+
+  .title {
+    font-size: 0.7rem;
+  }
+
+  .windowButtons * {
+    height: 9px;
+    width: 9px;
+    margin-left: 0.25rem;
+  }
+}
+
+/* Very small mobile: < 320px */
+@media screen and (max-width: 320px) {
+  .titlebar {
+    height: 22px;
+    font-size: 0.65rem;
+  }
+
+  .windowButtons * {
+    height: 8px;
+    width: 8px;
   }
 }
