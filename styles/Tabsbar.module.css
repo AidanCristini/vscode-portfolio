@@ -5,6 +5,8 @@
   overflow-x: auto;
   scrollbar-width: thin;
   scrollbar-color: var(--accent-color) transparent;
+  max-width: 100%;
+  min-width: 0;
 }
 
 .tabs::-webkit-scrollbar {
